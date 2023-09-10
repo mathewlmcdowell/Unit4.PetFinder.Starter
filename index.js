@@ -20,7 +20,6 @@ app.get('/api/v1/pets', (req, res) => {
     res.send(pets);
 });
 
-// get pet by owner with query string
 app.get('/api/v1/pets/owner', (req, res) => {
 
     const { owner } = req.query;
@@ -28,7 +27,6 @@ app.get('/api/v1/pets/owner', (req, res) => {
     res.send(pet);
 });
 
-// get pet by name
 app.get('/api/v1/pets/:name', (req, res) => {
 
     const name = req.params.name;
